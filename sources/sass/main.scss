@@ -2,6 +2,7 @@
 @use './base' as theme;
 @use './layouts/navbar';
 @use './utils/classes';
+@use './components/links';
 
 // General
 body {
@@ -12,6 +13,76 @@ body {
 // Header
 .home-header {
   background-color: theme.$color-black;
+  padding-block-start: 202px;
   block-size: 674px;
   position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  // Hero
+  &__faded-bg {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    inline-size: 50%;
+    block-size: 100%;
+    background-color: theme.$color-black;
+    box-shadow: 0 0 100px 200px theme.$color-black;
+  }
+
+  &__tentacles {
+    position: absolute;
+    z-index: -2;
+    right: 0;
+    top: 0;
+    inline-size: 50%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    block-size: 100%;
+  }
+
+  &__surtitle {
+    font-size: theme.$fs-18;
+    font-weight: 300;
+  }
+
+  &__title {
+    font-size: theme.$fs-80;
+    margin-block-end: 24px;
+  }
+
+  &__subtitle {
+    font-size: theme.$fs-18;
+    font-weight: 300;
+    margin-block-end: 14px;
+  }
+
+  &__cta {
+    min-inline-size: 236px;
+    align-self: flex-start;
+  }
+
+  &__info {
+    margin-block-start: auto;
+    display: flex;
+    gap: 32px;
+    margin-block-end: 64px;
+  }
+
+  &__info-paragraph {
+    display: inline-flex;
+    align-items: center;
+    font-family: theme.$text-raleway;
+  }
+
+  &__info-icon {
+    inline-size: theme.$fs-24;
+    margin-inline-end: 8px;
+  }
 }

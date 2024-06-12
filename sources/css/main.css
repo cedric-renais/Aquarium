@@ -70,7 +70,7 @@ ul {
     padding-block: 14px;
   }
   .l-main-nav--active {
-    background-color: #1e1f24;
+    background-color: #0c0e0d;
     border-block-end: 1px solid rgba(241, 241, 241, 0.6);
   }
   .l-main-nav--active .l-main-nav__list, .l-main-nav--active .l-main-nav__phone-number {
@@ -123,15 +123,92 @@ ul {
   }
 }
 
+.u-main-title {
+  font-family: "Antic Didone";
+}
+
+.c-gold-link {
+  font-family: "Lato";
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #0c0e0d;
+  background-color: #e78c15;
+  padding-inline: 9px;
+  padding-block: 9px;
+  line-height: 133.33%;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+}
+
 body {
   font-family: "Lato";
   color: #f1f1f1;
 }
 
 .home-header {
-  background-color: #1e1f24;
+  background-color: #0c0e0d;
+  padding-block-start: 202px;
   block-size: 674px;
   position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.home-header__faded-bg {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  inline-size: 50%;
+  block-size: 100%;
+  background-color: #0c0e0d;
+  box-shadow: 0 0 100px 200px #0c0e0d;
+}
+.home-header__tentacles {
+  position: absolute;
+  z-index: -2;
+  right: 0;
+  top: 0;
+  inline-size: 50%;
+  block-size: 100%;
+  object-fit: cover;
+}
+.home-header__container {
+  display: flex;
+  flex-direction: column;
+  block-size: 100%;
+}
+.home-header__surtitle {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+.home-header__title {
+  font-size: 5rem;
+  margin-block-end: 24px;
+}
+.home-header__subtitle {
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin-block-end: 14px;
+}
+.home-header__cta {
+  min-inline-size: 236px;
+  align-self: flex-start;
+}
+.home-header__info {
+  margin-block-start: auto;
+  display: flex;
+  gap: 32px;
+  margin-block-end: 64px;
+}
+.home-header__info-paragraph {
+  display: inline-flex;
+  align-items: center;
+  font-family: "Raleway";
+}
+.home-header__info-icon {
+  inline-size: 1.5rem;
+  margin-inline-end: 8px;
 }
 
 /*# sourceMappingURL=main.css.map */

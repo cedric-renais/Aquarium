@@ -1,0 +1,15 @@
+// Imports
+@use '../base' as theme;
+
+// Button
+@mixin button-aspect {
+  font-family: theme.$text-lato;
+  font-size: theme.$fs-18;
+  font-weight: 700;
+  color: theme.$color-black;
+  background-color: theme.$color-primary;
+  padding-inline: 9px;
+  padding-block: 9px;
+  line-height: 133.33%;
+  cursor: pointer;
+}

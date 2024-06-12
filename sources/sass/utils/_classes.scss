@@ -1,4 +1,7 @@
-// Utility classes
+// Imports
+@use '../base' as theme;
+
+// Container
 .u-container {
   max-width: 1100px;
   padding-inline: 20px;
@@ -9,4 +12,9 @@
   @media (max-width: 1130px) {
     max-inline-size: 850px;
   }
+}
+
+// Typography
+.u-main-title {
+  font-family: theme.$heading-antic-didone;
 }
