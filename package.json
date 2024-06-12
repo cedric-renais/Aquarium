@@ -1,0 +1,16 @@
+{
+  "name": "aquarium",
+  "version": "1.0.0",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sources/sass:sources/css"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Javascript",
+    "SASS"
+  ],
+  "license": "ISC"
+}

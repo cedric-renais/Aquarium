@@ -1,0 +1,8 @@
+// Imports
+@use './base' as theme;
+
+// Général
+body {
+  font-family: theme.$text-lato;
+  color: theme.$color-white;
+}

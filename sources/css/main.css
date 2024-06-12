@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  font-style: italic;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Lato";
+  color: #f1f1f1;
+}
+
+/*# sourceMappingURL=main.css.map */
