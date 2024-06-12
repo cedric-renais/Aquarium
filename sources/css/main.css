@@ -211,4 +211,66 @@ body {
   margin-inline-end: 8px;
 }
 
+@media (max-width: 1130px) {
+  .home-header__faded-bg {
+    inline-size: 40%;
+  }
+  .home-header__tentacles {
+    inline-size: 60%;
+  }
+}
+@media (max-width: 770px) {
+  .home-header {
+    block-size: 568px;
+    padding-block-start: 150px;
+  }
+  .home-header__faded-bg, .home-header__tentacles {
+    inline-size: 100%;
+  }
+  .home-header__faded-bg {
+    background-color: rgba(12, 14, 13, 0.6);
+  }
+  .home-header__surtitle {
+    font-size: 1rem;
+  }
+  .home-header__title {
+    margin-block-end: 27px;
+    font-size: 3.125rem;
+  }
+  .home-header__subtitle {
+    font-size: 1rem;
+    margin-block-end: 16px;
+  }
+  .home-header__cta {
+    font-size: 1rem;
+  }
+  .home-header__info {
+    flex-direction: column;
+    gap: 16px;
+    margin-block-end: 32px;
+  }
+}
+@media (max-width: 500px) {
+  .home-header__cta {
+    align-self: center;
+    margin-block-end: 0;
+  }
+  .home-header__surtitle, .home-header__title, .home-header__subtitle {
+    text-align: center;
+  }
+}
+@media (max-width: 435px) {
+  .home-header {
+    padding-block-start: 113px;
+  }
+  .home-header__title {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 360px) {
+  .home-header__title {
+    font-size: 2.0625rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
