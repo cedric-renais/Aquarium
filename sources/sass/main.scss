@@ -1,8 +1,16 @@
 // Imports
 @use './base' as theme;
+@use './layouts/navbar';
+@use './utils/classes';
 
 // General
 body {
   font-family: theme.$text-lato;
   color: theme.$color-white;
+}
+
+// Header
+.home-header {
+  background-color: theme.$color-black;
+  block-size: 674px;
 }

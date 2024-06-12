@@ -1,0 +1,49 @@
+// Imports
+@use '../base/theme';
+
+// styles
+.l-main-nav {
+  position: absolute;
+  top: 21px;
+  inline-size: 100%;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: theme.$fs-33;
+    font-family: theme.$heading-antic-didone;
+    color: theme.$color-white;
+  }
+
+  &__toggle-button {
+    display: none;
+  }
+
+  &__list {
+    flex-shrink: 0;
+    display: flex;
+  }
+
+  &__link {
+    font-size: theme.$fs-16;
+    font-family: theme.$text-lato;
+    margin-inline: 16px;
+  }
+
+  &__phone-number {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__phone-logo {
+    margin-inline-end: 7px;
+  }
+  &__logo,
+  &__phone-number {
+    inline-size: 100%;
+  }
+}

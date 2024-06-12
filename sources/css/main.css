@@ -21,9 +21,64 @@ ul {
   list-style: none;
 }
 
+.l-main-nav {
+  position: absolute;
+  top: 21px;
+  inline-size: 100%;
+}
+.l-main-nav__container {
+  display: flex;
+  align-items: center;
+}
+.l-main-nav__logo {
+  font-size: 2.0625rem;
+  font-family: "Antic Didone";
+  color: #f1f1f1;
+}
+.l-main-nav__toggle-button {
+  display: none;
+}
+.l-main-nav__list {
+  flex-shrink: 0;
+  display: flex;
+}
+.l-main-nav__link {
+  font-size: 1rem;
+  font-family: "Lato";
+  margin-inline: 16px;
+}
+.l-main-nav__phone-number {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.l-main-nav__phone-logo {
+  margin-inline-end: 7px;
+}
+.l-main-nav__logo, .l-main-nav__phone-number {
+  inline-size: 100%;
+}
+
+.u-container {
+  max-width: 1100px;
+  padding-inline: 20px;
+  margin-inline: auto;
+  box-sizing: content-box;
+}
+@media (max-width: 1130px) {
+  .u-container {
+    max-inline-size: 850px;
+  }
+}
+
 body {
   font-family: "Lato";
   color: #f1f1f1;
+}
+
+.home-header {
+  background-color: #1e1f24;
+  block-size: 674px;
 }
 
 /*# sourceMappingURL=main.css.map */
