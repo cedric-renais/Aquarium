@@ -47,3 +47,70 @@
     inline-size: 100%;
   }
 }
+
+// Breakpoint
+@media (max-width: 1130px) {
+  .l-main-nav__link {
+    margin-inline: 8px;
+  }
+}
+
+@media (max-width: 920px) {
+  .l-main-nav {
+    top: 0;
+    padding-block: 14px;
+
+    &--active {
+      background-color: theme.$color-black;
+      border-block-end: 1px solid rgba(theme.$color-white, 0.6);
+    }
+
+    &--active &__list,
+    &--active &__phone-number {
+      display: flex;
+    }
+
+    &__container {
+      flex-wrap: wrap;
+    }
+
+    &__logo {
+      inline-size: auto;
+      margin-inline-end: auto;
+      font-size: theme.$fs-22;
+    }
+
+    &__toggle-button {
+      display: inline-flex;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    &__toggle-button img {
+      inline-size: theme.$fs-24;
+    }
+
+    &__list {
+      flex-direction: column;
+      inline-size: 100%;
+      margin-block: 20px;
+    }
+
+    &__link {
+      display: inline-block;
+      padding-block: 16px;
+      margin-inline: 0;
+    }
+
+    &__phone-number {
+      padding-block-end: 16px;
+      justify-content: flex-start;
+    }
+
+    &__list,
+    &__phone-number {
+      display: none;
+    }
+  }
+}
