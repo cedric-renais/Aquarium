@@ -159,6 +159,25 @@ body {
   }
 }
 
+// Section - Values
+.values-section {
+  padding-block: 104px;
+  display: flex;
+  gap: 100px;
+
+  &__content {
+    padding-block-start: 33px;
+  }
+
+  &__h2 {
+    margin-block-end: 16px;
+  }
+
+  &__basic-text {
+    margin-block-end: 46px;
+  }
+}
+
 // Breakpoints 1130px
 @media (max-width: 1130px) {
   // Header
@@ -208,6 +227,30 @@ body {
     }
 
     &__side-image-container {
+      display: none;
+    }
+  }
+
+  // Section - Values
+  .values-section {
+    padding-block: 72px 140px;
+    max-inline-size: 550px;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+
+    &__content {
+      padding-block-start: 0;
+    }
+
+    &__chef-img {
+      order: 2;
+      max-inline-size: 400px;
+      inline-size: 100%;
+      margin-inline: auto;
+    }
+
+    &__decoration-img {
       display: none;
     }
   }
@@ -323,6 +366,11 @@ body {
   .dishes-section__side-image {
     inline-size: 100%;
     max-inline-size: 350px;
+  }
+
+  // Section - Values
+  .values-section {
+    padding-block: 48px 120px;
   }
 }
 

@@ -303,6 +303,21 @@ body {
   margin-block-end: 16px;
 }
 
+.values-section {
+  padding-block: 104px;
+  display: flex;
+  gap: 100px;
+}
+.values-section__content {
+  padding-block-start: 33px;
+}
+.values-section__h2 {
+  margin-block-end: 16px;
+}
+.values-section__basic-text {
+  margin-block-end: 46px;
+}
+
 @media (max-width: 1130px) {
   .home-header__faded-bg {
     inline-size: 40%;
@@ -337,6 +352,25 @@ body {
     text-align: center;
   }
   .dishes-section__side-image-container {
+    display: none;
+  }
+  .values-section {
+    padding-block: 72px 140px;
+    max-inline-size: 550px;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .values-section__content {
+    padding-block-start: 0;
+  }
+  .values-section__chef-img {
+    order: 2;
+    max-inline-size: 400px;
+    inline-size: 100%;
+    margin-inline: auto;
+  }
+  .values-section__decoration-img {
     display: none;
   }
 }
@@ -419,6 +453,9 @@ body {
   .dishes-section__side-image {
     inline-size: 100%;
     max-inline-size: 350px;
+  }
+  .values-section {
+    padding-block: 48px 120px;
   }
 }
 @media (max-width: 500px) {
