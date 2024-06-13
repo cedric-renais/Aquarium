@@ -33,6 +33,10 @@
   }
 }
 
+.u-section-h2--light {
+  color: theme.$color-white;
+}
+
 .u-basic-text {
   font-size: theme.$fs-18;
   color: theme.$color-black;
@@ -44,4 +48,8 @@
   @media (max-width: 500px) {
     font-size: theme.$fs-16;
   }
+}
+
+.u-basic-text--light {
+  color: theme.$color-white;
 }

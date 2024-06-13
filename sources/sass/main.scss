@@ -101,6 +101,64 @@ body {
   }
 }
 
+// Section - Dishes
+.dishes-section {
+  background-color: theme.$color-black;
+
+  &__container {
+    padding-block: 90px;
+    display: flex;
+  }
+
+  &__content {
+    max-inline-size: 555px;
+    margin-inline-end: 105px;
+  }
+
+  &__h2 {
+    margin-block-end: 16px;
+  }
+
+  &__basic-text {
+    margin-block-end: 48px;
+  }
+
+  &__photos {
+    display: flex;
+    margin-block-end: 56px;
+    gap: 16px;
+  }
+
+  &__card-name {
+    margin-block-start: 16px;
+    font-size: theme.$fs-18;
+    line-height: 133.33%;
+  }
+
+  &__card-price {
+    font-size: theme.$fs-14;
+    font-weight: 300;
+  }
+
+  &__links {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__link {
+    min-inline-size: 200px;
+  }
+
+  &__side-image-container {
+    margin-block-start: -180px;
+    text-align: center;
+  }
+
+  &__side-image {
+    margin-block-end: 16px;
+  }
+}
+
 // Breakpoints 1130px
 @media (max-width: 1130px) {
   // Header
