@@ -172,6 +172,7 @@ body {
       inline-size: 60%;
     }
   }
+
   // Section - About
   .discover-section {
     flex-direction: column;
@@ -188,6 +189,26 @@ body {
 
     &__text {
       margin-block-end: 22px;
+    }
+  }
+
+  // Section - Dishes
+  .dishes-section {
+    &__container {
+      padding-block: 72px 120px;
+    }
+
+    &__content {
+      margin-inline: auto;
+      max-inline-size: 420px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__side-image-container {
+      display: none;
     }
   }
 }
@@ -235,11 +256,58 @@ body {
   }
 }
 
+// Breakpoints 630px
+@media (max-width: 630px) {
+  // Section - Dishes
+  .dishes-section {
+    &__container {
+      flex-direction: column;
+      padding-block: 88px 112px;
+    }
+
+    &__content {
+      order: 2;
+    }
+
+    &__h2 {
+      margin-block-end: 4px;
+    }
+
+    &__basic-text {
+      margin-block-end: 0;
+    }
+
+    &__card {
+      display: none;
+    }
+
+    &__links {
+      flex-direction: column;
+      inline-size: 100%;
+      max-inline-size: 300px;
+    }
+
+    &__side-image-container {
+      display: block;
+      margin-block-start: -142px;
+    }
+
+    &__side-image {
+      inline-size: 100%;
+      max-inline-size: fit-content;
+    }
+
+    &__img-label {
+      margin-block-end: 42px;
+    }
+  }
+}
+
 // Breakpoints 600px
 @media (max-width: 600px) {
   // Section - About
   .discover-section {
-    padding-block: 48px 80px;
+    padding-block: 48px 151px;
 
     &__dish-img {
       max-inline-size: 350px;
@@ -249,6 +317,12 @@ body {
     &__text {
       margin-block-end: 0;
     }
+  }
+
+  // Section - Dishes
+  .dishes-section__side-image {
+    inline-size: 100%;
+    max-inline-size: 350px;
   }
 }
 
