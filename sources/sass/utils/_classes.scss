@@ -18,3 +18,30 @@
 .u-main-title {
   font-family: theme.$heading-antic-didone;
 }
+
+.u-section-h2 {
+  font-family: theme.$heading-antic-didone;
+  font-size: theme.$fs-36;
+  letter-spacing: 0.72px;
+  color: theme.$color-black;
+  line-height: 155.55%;
+  text-transform: uppercase;
+
+  // Breakpoint
+  @media (max-width: 1130px) {
+    font-size: theme.$fs-32;
+  }
+}
+
+.u-basic-text {
+  font-size: theme.$fs-18;
+  color: theme.$color-black;
+  font-weight: 300;
+  letter-spacing: 0.32px;
+  line-height: 177.77%;
+
+  // Breakpoint
+  @media (max-width: 500px) {
+    font-size: theme.$fs-16;
+  }
+}
